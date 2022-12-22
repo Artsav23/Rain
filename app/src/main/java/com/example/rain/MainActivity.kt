@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun direction() {
-        binding.seekBarDirection.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
+        binding.seekBarDirection.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 binding.rainObject.direction = progress - 50
             }
@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun changeSizeFigure() {
-        binding.seekBarSize.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
+        binding.seekBarSize.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 binding.rainObject.sizeFigure = progress.toString().toFloat()
             }
